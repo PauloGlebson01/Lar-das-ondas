@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lar das Ondas | Cartão Digital Profissional</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Biblioteca QR Code -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./image/Lar-das-ondas-icon.png" type="image/x-icon">
+</head>
+
+<body class="dark">
+
+    <!-- CARD -->
+    <div class="card">
+
+        <!-- Toggle Tema -->
+        <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">
+            🌙
+        </button>
+
+        <!-- Botão Compartilhar -->
+        <button id="shareBtn" class="share-btn" aria-label="Compartilhar cartão">
+            🔗 Compartilhar
+        </button>
+
+        <!-- Foto / Logo -->
+        <div class="logo">
+            <img src="./image/Lar-das-ondas-perfil.jpg" alt="Lar das Ondas">
+        </div>
+
+        <!-- Nome -->
+        <h1>Lar das Ondas</h1>
+
+        <!-- Subtítulo -->
+        <p class="subtitle">
+            Casa de Veraneio • Aluguel por Temporada <br>
+            🌴 Jacumã – PB • A poucos passos do mar
+        </p>
+
+        <!-- Destaques -->
+        <ul class="features">
+            <li>🏖️ A 2 quadras da Praia do Amor</li>
+            <li>🏡 Casa completa e confortável</li>
+            <li>🛏️ Ideal para família e amigos</li>
+            <li>🌅 Acesso por trilha paradisíaca</li>
+            <li>📅 Aluguel por diária ou temporada</li>
+        </ul>
+
+        <!-- Botões -->
+        <div class="buttons">
+            <a href="https://wa.me/5583996290239?text=Olá,%20gostaria%20de%20informações%20sobre%20disponibilidade%20da%20casa%20Lar%20das%20Ondas."
+                target="_blank" class="btn whatsapp-btn">
+                📲 Consultar disponibilidade
+            </a>
+
+            <a href="https://instagram.com/lar_das_ondas" target="_blank" class="btn secondary">
+                📸 Ver fotos no Instagram
+            </a>
+
+            <a href="https://www.google.com/maps/search/?api=1&query=Rua+Ivanildo+Lins+Fialho+Village+Jacumã+PB+58322000"
+                target="_blank" class="btn secondary">
+                📍 Localização no mapa
+            </a>
+        </div>
+
+        <!-- Texto de referência -->
+        <p class="subtitle">
+            🧭 <strong>Ponto de referência:</strong> Rua da Serraria, lateral da Capela São José
+        </p>
+
+        <!-- Rodapé -->
+        <div class="footer">
+
+            <!-- Ícones sociais -->
+            <div class="footer-social">
+                <a href="https://wa.me/5583996290239?text=Olá,%20gostaria%20de%20informações%20sobre%20disponibilidade%20da%20casa%20Lar%20das%20Ondas."
+                    target="_blank" aria-label="WhatsApp">
+                    📲
+                </a>
+
+                <a href="https://instagram.com/lar_das_ondas" target="_blank" aria-label="Instagram">
+                    📸
+                </a>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Rua+Ivanildo+Lins+Fialho+Village+Jacumã+PB+58322000"
+                    target="_blank" aria-label="Localização">
+                    📍
+                </a>
+            </div>
+
+            <p>
+                © 2026 Lar das Ondas • Casa de Veraneio <br>
+                Todos os direitos reservados
+            </p>
+        </div>
+
+        <!-- MODAL COMPARTILHAR -->
+        <div id="shareModal" class="share-modal">
+            <div class="share-content">
+                <h3>Compartilhar cartão</h3>
+
+                <!-- QR Code -->
+                <div class="qr-box">
+                    <div class="qr-wrapper">
+                        <div id="qrcode"></div>
+                        <img src="./image/Lar-das-ondas-icon.png" alt="Logo" class="qr-logo">
+                    </div>
+                </div>
+
+
+                <button id="copyLinkBtn" class="share-action">
+                    📋 Copiar link
+                </button>
+
+                <button id="shareLinkBtn" class="share-action">
+                    🔗 Compartilhar
+                </button>
+
+                <button id="closeShare" class="close-share">
+                    Fechar
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
