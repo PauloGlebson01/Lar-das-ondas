@@ -3,7 +3,7 @@
 ========================= */
 
 // 🔗 LINK FIXO DO CARTÃO DIGITAL (ALTERE AQUI)
-const cardURL = "https://instagram.com/lar_das_ondas";
+const cardURL = "https://lar-das-ondas.vercel.app";
 
 /* =========================
    ELEMENTOS
